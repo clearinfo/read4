@@ -1,0 +1,69 @@
+﻿@import "../../../assets/css/base.scss";
+
+$viewW:640px;
+@mixin radius($v:5px){
+  border-radius: $v;
+  -webkit-border-radius: $v;
+  -ms-border-radius: $v;
+}
+.zmiti-nav-main-ui{
+  width: $viewW;
+  height: 100%;
+  @include pos(a);
+  left: 50%;
+  top: 0;
+  margin-left: -$viewW / 2;
+  background-color: #ccc;
+  z-index: 100;
+  background-image:url('../images/read_bg003.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  .zmiti-nav-top01{
+    background-image:url('../images/read_img001.png');
+    background-repeat: no-repeat;    
+    width:100%;
+    height:338px;    
+    background-size:cover;
+  }
+  .zmiti-nav-bot01{
+    background-image:url('../images/read_img002.png');
+    background-repeat: no-repeat;    
+    width:100%;
+    height:300px;
+    position: absolute;
+    bottom:0;
+    background-size:cover;
+  }
+  .zmiti-nav-btn02{
+    width:100%;
+    margin:40px 0 0 20px;
+    text-align: center; 
+    button{
+      border:none;
+      width:260px;
+      height:88px;
+      font-size:32px;
+      color:#333333;
+      cursor: default;
+      text-align: center; 
+      margin:0 10px;
+      background:url('../images/read_btn02.png') no-repeat;
+    }
+  }
+  .zmiti-nav-btn01{
+    width:100%;
+    margin:40px 0 0 20px;
+    text-align: center;    
+    button{
+      border:none;
+      width:260px;
+      height:88px;
+      font-size:32px;
+      color:#ffffff;
+      cursor: default;
+      text-align: center; 
+      margin:0 10px;
+      background:none;
+    }
+  }
+}

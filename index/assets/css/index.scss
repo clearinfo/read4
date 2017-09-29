@@ -1,0 +1,105 @@
+﻿@import "../../../assets/css/base.scss";
+
+html, body, div, p, ul, li, ol, dl, dt, dd, header, footer, video, h1, h2, h3, h4, canvas, section, figure {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+body{
+	  font-family: "Helvetica Neue", 'Helvetica', "Microsoft YaHei", '微软雅黑', arial, sans-serif;
+	  overflow-x:hidden;
+}
+img {
+  border: none;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+
+input, textarea {
+  outline: none;
+}
+
+.zmiti-index-main-ui{
+  
+  overflow: hidden;
+
+
+  .zmiti-index-title{
+    @include pos(r);
+  }
+
+  .zmiti-read-count{
+    @include pos(a);
+    bottom: 75px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color:#fc1f58;
+    $size:100px;
+    width: $size;
+    left: 51%;
+    margin-left: -$size /2;
+  }
+
+  .zmiti-read-btn{
+    &:nth-of-type(2){
+      right: 100px;
+      left: auto;
+    }
+    width: 196px;
+    height: 66px;
+    background: #ecc18c;
+    color:#000;
+    @include pos(a);
+    bottom: 178px;
+    left: 100px;
+    line-height: 66px;
+    text-align: center;
+    font-size: 30px;
+    &:before,&:after{
+      content:'';
+      width: 0;
+      height: 0;
+      @include pos(a);
+      right:-1px;
+      bottom: 0;
+      border-bottom: 60px solid #381f06;
+      border-left: 30px solid transparent;
+    }
+    &:after{
+      content:'';
+      width: 0;
+      height: 0;
+      @include pos(a);
+      right:-1px;
+      top: -1px;
+      border-bottom: none;
+      border-top: 30px solid #574532;
+      border-left: 60px solid transparent; 
+    }
+
+  }
+
+  .zmiti-goto-search{
+    width: 160px;
+    height: 50px;
+    margin:100px auto;
+    @include br(10px);
+    line-height: 50px;
+    background: #999;
+    color:#fff;
+    text-align: center;
+  }  
+}

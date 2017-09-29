@@ -1,0 +1,203 @@
+﻿@import "../../../assets/css/base.scss";
+
+$viewW:640px;
+@mixin radius($v:5px){
+  border-radius: $v;
+  -webkit-border-radius: $v;
+  -ms-border-radius: $v;
+}
+.zmiti-group-main-ui{
+  width: $viewW;
+  height: 100%;
+  overflow: auto;
+  @include pos(a);
+  left: 50%;
+  top: 0;
+  margin-left: -$viewW / 2;
+  background-color: #ccc;
+  z-index: 100;
+  background-image:url('../images/read_bg004.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  .zmiti-group-top01{
+
+    background-repeat: no-repeat;    
+    width:100%;
+    height:244px;    
+    background-size:cover;
+  }
+  .zmiti-group-h3{
+    font-size:30px;
+    line-height:2;
+    padding-left:26px;
+    clear:both;
+    font-weight:bold;
+  }
+  .clearfix{
+    clear:both;
+    font-size:0;
+    line-height: 0;
+  }
+  .zmiti-group-prolist{ 
+  
+    color:#000;
+    font-size:14px;
+    padding:20px 0 20px 15px;
+    @include pos(r);
+
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; 
+    -webkit-box-sizing:border-box; 
+    overflow: hidden; 
+    a{
+      color:#000;
+    }
+    .zmiti-group-province{
+      font-size:28px;
+      
+      margin-left:30px;
+      height: 1300px;
+
+      .zmiti-group-paddinginner{
+        height: 100%;
+      }
+      li{
+        float:left;
+        width:240px;
+        height: 50px;
+      line-height: 50px;
+        margin:0 20px 30px 20px;
+        text-align: center;
+        border:1px #cccccc solid;
+
+        &:last-of-type{
+           &:after{
+            content:'';
+            clear:both;
+           }
+        }
+      }
+      li.zmiti-group-text02{
+        width:100%;
+        clear:both;
+        float:none;
+        text-align: center;
+        border:none;
+        font-size:24px;
+        margin-left:-12px; 
+        color:#0da3f9;
+        em{
+          font-style:normal;
+          color:red;
+          padding-right:5px;
+        }
+      }
+      .zmiti-group-dialog-xj{
+        font-size:24px;
+      }
+    }
+    .zmiti-group-list-tab{
+      padding:15px 0;
+      li{
+        float:left;        
+        padding:0 15px 15px 15px;
+      }
+      img{
+        width:180px;
+        height:180px;
+      }
+    }
+    .zmiti-group-tit{
+      line-height: 20px;
+      margin-top:5px;
+    }
+    .zmiti-group-code{
+      line-height: 20px;
+      height:20px;
+      overflow:hidden;
+      color:#ffffff;
+    }
+    table{
+     width:100%;
+    }
+  }
+
+}
+  .zmiti-group-dialog{
+    width: $viewW;
+    height:100%;
+    position: absolute;
+    top:0;
+    display:none;
+    z-index:1000;
+    background:rgba(0,0,0, 0.7);
+    .zmiti-group-close{
+      color:#ffffff;
+      font-size:50px;
+      line-height: 1;
+      text-align:right;
+      padding:20px 20px 0 0;
+    }
+    .zmiti-group-dialog-inner{
+      padding:80px;
+    }
+    .zmiti-group-dialog-tit{
+      font-size:30px;
+      line-height:1.5;
+      color:#ffffff;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .zmiti-group-dialog-imgs{
+      width:240px;
+      height:240px;
+      margin:0 auto;
+      display:block;
+    }
+    .zmiti-group-dialog-tips{
+      color:#ffffff;
+      font-size:20px;
+      line-height:2;
+
+      margin-top:50px;
+    }
+    .zmiti-group-dialog-text{
+      color:#ffffff;
+      font-size:20px;
+      line-height:2;
+      ol{
+        padding-left:10px;
+        li{
+          margin-left:20px;
+          list-style-type: decimal;
+        }
+      }
+    }
+    .zmiti-group-dialog-code{
+      color:#ffffff;
+      text-align:center;
+      margin-top:20px;
+    }
+
+  }
+  .zmiti-group-h1{font-size:40px;color:#333333;text-align:center;line-height: 2;}
+  .zmiti-group-main-ui .zmiti-group-prolist .zmiti-group-province li.zmiti-group-btn02{
+    width:100%;
+    margin:0 0 0 -20px;
+    text-align: center; 
+    float:none;
+    clear:both;
+    border:none;
+    button{
+      border:none;
+      width:260px;
+      height:88px;
+      margin:0 auto;
+
+      font-size:32px;
+      color:#333333;
+      cursor: default;
+      text-align: center; 
+      margin:0 10px;
+    }
+  }

@@ -1,0 +1,209 @@
+/*.ant-btn:focus, .ant-btn:hover,.ant-input:focus, .ant-input:hover {
+    background-color: #fff;
+    border-color: #bf1616;
+    box-shadow: 0 0 0 2px rgba(191, 22, 22, 0.1);
+}*/
+.lt-full {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.zmiti-text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis; }
+
+.zmiti-result-main-ui {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+  .zmiti-result-main-ui .zmiti-result-C {
+    padding: 100px 30px;
+    box-sizing: border-box; }
+  .zmiti-current-qrcode {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100; }
+    .zmiti-current-qrcode span {
+      color: #fff;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 50%;
+      margin-top: -200px; }
+  .zmiti-result-main-ui .zmiti-result-main {
+    width: 580px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    position: relative; }
+    .zmiti-result-main-ui .zmiti-result-main .zmiti-result-title {
+      width: 300px;
+      height: 64px;
+      line-height: 64px;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      margin-left: -150px;
+      top: -32px; }
+      .zmiti-result-main-ui .zmiti-result-main .zmiti-result-title img {
+        vertical-align: top; }
+    .zmiti-result-main-ui .zmiti-result-main .zmiti-result-type {
+      padding-top: 40px;
+      text-indent: 1em;
+      border-bottom: 1px solid #999;
+      width: 96%;
+      margin: 0 auto;
+      padding-bottom: 20px; }
+    .zmiti-result-main-ui .zmiti-result-main .zmiti-search-result-tip {
+      text-indent: 1em;
+      width: 96%;
+      margin: 20px auto 0; }
+    .zmiti-result-main-ui .zmiti-result-main .zmiti-no-result {
+      text-indent: 1em;
+      width: 96%;
+      margin: 20px auto 0;
+      color: #999; }
+    .zmiti-result-main-ui .zmiti-result-main .zmiti-search-btn {
+      width: 140px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: #fff;
+      margin: 40px auto 0;
+      position: relative;
+      -webkit-transition: 0.1s;
+      transition: 0.1s;
+      z-index: 10; }
+      .zmiti-result-main-ui .zmiti-result-main .zmiti-search-btn > div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #e0b27c;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        border-radius: 10px; }
+      .zmiti-result-main-ui .zmiti-result-main .zmiti-search-btn > section {
+        position: absolute;
+        width: 140px;
+        left: 0;
+        top: 0;
+        height: 52px;
+        background: #381f06;
+        border-radius: 10px;
+        z-index: 8; }
+      .zmiti-result-main-ui .zmiti-result-main .zmiti-search-btn.active > div {
+        position: absolute;
+        width: 100%;
+        height: 52px;
+        background: #e0b27c;
+        -webkit-transform: translate3d(0, 2px, 0);
+        transform: translate3d(0, 2px, 0);
+        z-index: 10;
+        left: 0;
+        top: 0;
+        border-radius: 10px; }
+      .zmiti-result-main-ui .zmiti-result-main .zmiti-search-btn.active > section {
+        position: absolute;
+        width: 140px;
+        left: 0;
+        bottom: 0;
+        height: 50px;
+        background: #381f06;
+        border-radius: 10px;
+        z-index: 8; }
+    .zmiti-result-main-ui .zmiti-result-main .zmiti-search-input {
+      width: 500px;
+      height: 60px;
+      line-height: 60px;
+      padding-top: 80px;
+      position: relative;
+      margin: 0 auto; }
+      .zmiti-result-main-ui .zmiti-result-main .zmiti-search-input img {
+        position: absolute;
+        width: 40px;
+        bottom: 10px;
+        left: 15px; }
+      .zmiti-result-main-ui .zmiti-result-main .zmiti-search-input input {
+        font-size: 30px;
+        width: 100%;
+        border-radius: 6px;
+        padding: 6px 68px;
+        box-sizing: border-box;
+        height: 100%;
+        -webkit-appearance: none;
+        border: 1px solid #999; }
+    .zmiti-result-main-ui .zmiti-result-main .zmiti-result-item-C:first-of-type {
+      border: 1px solid red;
+      margin-top: 60px; }
+    .zmiti-result-main-ui .zmiti-result-main .zmiti-result-item-C .zmiti-result-item:last-of-type {
+      border: none; }
+    .zmiti-result-main-ui .zmiti-result-main .zmiti-result-item-C .zmiti-result-item > img {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 640px;
+      height: 100vh;
+      z-index: 1000; }
+    .zmiti-result-main-ui .zmiti-result-main .zmiti-result-item {
+      margin: 30px auto;
+      padding-bottom: 30px;
+      width: 96%;
+      position: relative; }
+      .zmiti-result-main-ui .zmiti-result-main .zmiti-result-item > div {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        perspective: 800px;
+        -webkit-perspective: 800px;
+        position: relative;
+        margin: 0 auto;
+        text-align: center; }
+        .zmiti-result-main-ui .zmiti-result-main .zmiti-result-item > div img {
+          width: 200px;
+          height: 200px;
+          position: relative; }
+        .zmiti-result-main-ui .zmiti-result-main .zmiti-result-item > div span {
+          display: block;
+          font-size: 20px;
+          color: #f00; }
+        .zmiti-result-main-ui .zmiti-result-main .zmiti-result-item > div div:nth-of-type(1) {
+          font-size: 32px;
+          margin: 10px auto;
+          max-width: 500px;
+          text-align: center; }
+        .zmiti-result-main-ui .zmiti-result-main .zmiti-result-item > div div:nth-of-type(2) {
+          color: #999; }
+      .zmiti-result-main-ui .zmiti-result-main .zmiti-result-item .zmiti-text-overflow {
+        overflow: hidden;
+        white-space: nowrap;
+        word-break: break-all;
+        text-overflow: ellipsis;
+        -webkit-text-overflow: ellipsis; }
+      .zmiti-result-main-ui .zmiti-result-main .zmiti-result-item .zmiti-result-num {
+        display: none;
+        position: absolute;
+        left: 1em;
+        top: 30%;
+        margin-top: -25px;
+        background: #2fd8fd;
+        padding: 10px;
+        border-radius: 50%;
+        color: #fff;
+        width: 30px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px; }
+
+/*# sourceMappingURL=index.css.map */
