@@ -367,7 +367,7 @@ class ZmitiGroupListApp extends Component {
 								<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,8)}>手机摄影群</a></li>
 								<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,9)}>体育群</a></li>						
 								<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,10)}>文化摄影群</a></li>						
-								<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,11)}>综合群</a></li>		
+								<li><a href="javascript:void(0)" onTouchTap={this.provinceDialog.bind(this,11)}>创意摄影群</a></li>		
 							</ul>
 							<div className="zmiti-china-h3">地方社群：</div>
 							<ul>
